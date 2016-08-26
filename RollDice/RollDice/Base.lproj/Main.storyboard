@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RollDice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="felt" translatesAutoresizingMaskIntoConstraints="NO" id="AOX-tq-bdG">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Roll Click!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Htj-Fz-r7m">
+                                <rect key="frame" x="75" y="67" width="223" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="caC-Bl-wFD">
+                                <rect key="frame" x="50" y="205" width="122" height="125"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice3" translatesAutoresizingMaskIntoConstraints="NO" id="Wnw-bd-vgS">
+                                <rect key="frame" x="237" y="205" width="126" height="125"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEK-K4-yx9">
+                                <rect key="frame" x="136" y="423" width="101" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="抽签">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doRoll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l6N-r7-WvB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AOX-tq-bdG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3cy-bK-lQd"/>
+                            <constraint firstItem="AOX-tq-bdG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cGe-s4-hEQ"/>
+                            <constraint firstAttribute="trailing" secondItem="AOX-tq-bdG" secondAttribute="trailing" id="jsn-jr-R4S"/>
+                            <constraint firstItem="AOX-tq-bdG" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="qxE-8k-DiI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgDice1" destination="caC-Bl-wFD" id="4F4-ww-RJu"/>
+                        <outlet property="imgDice2" destination="Wnw-bd-vgS" id="xsn-Ta-6WN"/>
+                        <outlet property="labRoll" destination="Htj-Fz-r7m" id="vcI-YR-hAC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="312"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dice1" width="299" height="294"/>
+        <image name="dice3" width="299" height="294"/>
+        <image name="felt" width="500" height="375"/>
+    </resources>
+</document>

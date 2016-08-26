@@ -1,0 +1,6 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
+options: "3336426ab6694d580b0be532a70f77b7"
+build_time: [525427263, 95109000]
+inputs:
+  "/Users/greendoralvdora/swift/RollDice/RollDice/ViewController.swift": [525427255, 0]
+  "/Users/greendoralvdora/swift/RollDice/RollDice/AppDelegate.swift": [525338784, 0]
